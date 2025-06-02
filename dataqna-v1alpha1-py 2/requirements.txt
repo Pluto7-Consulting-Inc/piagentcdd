@@ -1,0 +1,7 @@
+fastapi>=0.70.0,<0.110.0 # Use a recent stable version range
+uvicorn[standard]>=0.15.0,<0.25.0 # Includes standard dependencies
+google-cloud-dataqna>=0.1.0,<1.0.0
+google-auth>=2.0.0,<3.0.0
+protobuf>=3.19.0,<5.0.0 # Ensure compatibility, especially <4 with older google libs
+pydantic>=1.8.0,<2.0.0 # FastAPI often depends on Pydantic v1 for now
+gunicorn>=20.0.0,<22.0.0 # Needed for Dockerfile/Cloud Run production
